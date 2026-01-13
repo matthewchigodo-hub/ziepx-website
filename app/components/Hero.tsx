@@ -26,7 +26,7 @@ export default function Hero() {
 
       {/* Background Elements */}
       <div className="absolute right-0 bottom-0 overflow-hidden z-0">
-        <div className="absolute top-20 -left-40 w-96 h-96 bg-accent-purple/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 -left-40 w-96 h-96 bg-accent-blue/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 -right-40 w-96 h-96 bg-accent-cyan/10 rounded-full blur-3xl"></div>
       </div>
 
@@ -72,8 +72,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Empowering financial inclusion with secure, multi-currency mobile payments.
-              Accessible to everyone, everywhere.
+              We're building a platform to empower financial inclusion with secure, multi-currency mobile payments.
+              Coming soon to everyone, everywhere.
             </motion.p>
 
             {/* CTA Button */}
@@ -83,28 +83,45 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <a
+              <motion.a
                 href="#how-it-works"
-                className="border-2 border-gray-300 text-primary-dark px-8 py-4 rounded-full font-semibold text-lg hover:border-accent-purple hover:text-accent-purple transition-all duration-200 w-full sm:w-auto text-center"
+                className="relative border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-semibold text-lg w-full sm:w-auto text-center overflow-hidden group"
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 0 25px rgba(37, 99, 235, 0.6)"
+                }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
               >
-                Learn More
-              </a>
+                {/* Animated shimmer effect */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+                  animate={{
+                    x: ["-100%", "200%"],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    ease: "linear"
+                  }}
+                />
+                {/* Hover fill effect */}
+                <motion.div
+                  className="absolute inset-0 bg-blue-600 rounded-full"
+                  initial={{ scaleX: 0, originX: 0 }}
+                  whileHover={{ scaleX: 1 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                />
+                {/* Text with hover effect */}
+                <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+                  Learn More
+                </span>
+              </motion.a>
             </motion.div>
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 2 }}
-      >
-        <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gray-400 rounded-full mt-2"></div>
-        </div>
-      </motion.div>
     </section>
   );
 }

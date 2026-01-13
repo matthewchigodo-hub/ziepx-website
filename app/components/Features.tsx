@@ -12,17 +12,17 @@ const features = [
   {
     icon: FiUsers,
     title: "Financial Inclusion",
-    description: "Accessible to unbanked and underbanked populations. No complex requirements - just a mobile phone and banking app.",
+    description: "Will be accessible to unbanked and underbanked populations. No complex requirements - just a mobile phone and banking app.",
   },
   {
     icon: FiDollarSign,
     title: "Multi-Currency Support",
-    description: "Seamlessly handle ZiG, USD, and other regional currencies. Automatic conversion and real-time exchange rates.",
+    description: "Will seamlessly handle ZiG, USD, and other regional currencies. Automatic conversion and real-time exchange rates.",
   },
   {
     icon: FiSend,
     title: "P2P Transfers",
-    description: "Send money instantly to friends and family using just their phone number. Fast, secure, and fee-free transfers.",
+    description: "Send money instantly to friends and family using just their phone number. Fast, secure, and fee-free transfers coming soon.",
   },
   {
     icon: FiShoppingCart,
@@ -50,7 +50,7 @@ export default function Features() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Built for the African market with features that matter most
+            Coming soon: Built for the African market with features that matter most
           </p>
         </motion.div>
 

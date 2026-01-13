@@ -91,7 +91,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Simple, secure, and fast. Get started in minutes.
+            Simple, secure, and fast. Coming soon - get started in minutes.
           </p>
         </motion.div>
 

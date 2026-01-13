@@ -17,8 +17,8 @@ export default function Footer() {
               <span className="text-2xl font-bold text-white">ZIEPX</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-              Empowering financial inclusion across Zimbabwe and Africa through secure,
-              accessible mobile payment solutions.
+              We're building a platform to empower financial inclusion across Zimbabwe and Africa through secure,
+              accessible mobile payment solutions. Coming soon.
             </p>
             <div className="space-y-3">
               <div className="flex items-center text-gray-400 text-sm">
