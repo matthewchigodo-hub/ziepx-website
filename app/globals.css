@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 15, 23, 42;
+  --background-rgb: 255, 255, 255;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+
+  /* Revolut Calm Design Utilities */
+  .bento-card {
+    @apply rounded-revolut bg-white border border-gray-200 p-6 hover:shadow-xl transition-all duration-300;
+  }
+
+  .bento-card-lg {
+    @apply rounded-revolut-lg bg-white border border-gray-200 p-8 hover:shadow-xl transition-all duration-300;
+  }
+
+  .glass-nav {
+    @apply backdrop-blur-md bg-white/95;
+  }
+
+  .button-glow {
+    @apply relative;
+    box-shadow: 0 0 20px rgba(127, 132, 246, 0.3);
+  }
+
+  .button-glow:hover {
+    box-shadow: 0 0 30px rgba(127, 132, 246, 0.5);
+  }
+
+  .spring-ease {
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
