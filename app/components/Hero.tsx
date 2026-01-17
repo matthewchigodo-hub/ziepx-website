@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div 
@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="absolute bottom-20 -right-40 w-96 h-96 bg-accent-cyan/10 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 lg:pl-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:pl-16">
         <div className="max-w-4xl">
           {/* Content */}
           <motion.div
@@ -40,20 +40,20 @@ export default function Hero() {
             className="text-left"
           >
             {/* Logo and Title */}
-            <div className="flex justify-start items-center space-x-4 mb-8">
+            <div className="flex justify-start items-center space-x-3 sm:space-x-4 mb-6 sm:mb-8">
               <div className="relative">
-                <div className="w-16 h-16 relative">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 relative">
                   <Logo width={64} height={64} className="w-full h-full" priority />
                 </div>
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-dark tracking-tight">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-dark tracking-tight">
                 ZIEPX
               </h1>
             </div>
 
             {/* Main Headline */}
             <motion.h2
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-dark mb-6 text-balance leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-dark mb-4 sm:mb-6 text-balance leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -67,7 +67,7 @@ export default function Hero() {
 
             {/* Subheadline */}
             <motion.p
-              className="text-xl md:text-2xl text-gray-800 font-medium mb-10 max-w-2xl text-balance leading-relaxed"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-800 font-medium mb-8 sm:mb-10 max-w-2xl text-balance leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -85,7 +85,7 @@ export default function Hero() {
             >
               <motion.a
                 href="#how-it-works"
-                className="relative border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-semibold text-lg w-full sm:w-auto text-center overflow-hidden group"
+                className="relative border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg w-full sm:w-auto text-center overflow-hidden group min-h-[44px] flex items-center justify-center"
                 whileHover={{ 
                   scale: 1.05,
                   boxShadow: "0 0 25px rgba(37, 99, 235, 0.6)"

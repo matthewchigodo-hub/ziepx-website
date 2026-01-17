@@ -136,34 +136,34 @@ export default function HowItWorks() {
   };
 
   return (
-    <section id="how-it-works" className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="how-it-works" className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 lg:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-dark mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-dark mb-4 sm:mb-6">
             How It Works
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             Experience ZIEPX in action - try the interactive demo below
           </p>
         </motion.div>
 
-        <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 max-w-6xl mx-auto">
+        <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-12 max-w-6xl mx-auto">
           <div className="flex justify-end mb-4">
               <button
               onClick={resetFlow}
-              className="text-sm text-blue-600 hover:text-blue-700 font-semibold px-4 py-2 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              className="text-xs sm:text-sm text-blue-600 hover:text-blue-700 font-semibold px-3 sm:px-4 py-2 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors min-h-[44px]"
             >
               New Scenario
               </button>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 items-start">
             {/* Phone Mockup - Left Side */}
             <div className="flex-shrink-0 w-full lg:w-1/2 flex justify-center">
               <motion.div
@@ -174,7 +174,7 @@ export default function HowItWorks() {
                 className="relative"
               >
                 {/* Phone Frame */}
-                <div className="w-64 h-[500px] bg-gray-800 rounded-[2.5rem] p-2 shadow-2xl">
+                <div className="w-48 h-[375px] sm:w-56 sm:h-[437px] md:w-64 md:h-[500px] bg-gray-800 rounded-[2rem] sm:rounded-[2.5rem] p-1.5 sm:p-2 shadow-2xl">
                   <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
                     {/* Phone Notch */}
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-gray-800 rounded-b-2xl z-10"></div>
@@ -340,35 +340,35 @@ export default function HowItWorks() {
                           </div>
 
                             {/* Quick Access Shortcuts */}
-                            <div className="flex items-center gap-3 mb-4 px-1">
+                            <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 px-1">
                               <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={handleZiepxClick}
-                                className="flex flex-col items-center gap-1"
+                                className="flex flex-col items-center gap-1 min-w-[60px]"
                               >
-                                <div className="w-12 h-12 bg-primary-dark rounded-full flex items-center justify-center">
-                                  <Logo width={20} height={20} className="brightness-0 invert" />
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-dark rounded-full flex items-center justify-center">
+                                  <Logo width={18} height={18} className="brightness-0 invert sm:w-5 sm:h-5" />
                                 </div>
-                                <span className="text-xs text-gray-600">ZIEPX</span>
+                                <span className="text-[10px] sm:text-xs text-gray-600">ZIEPX</span>
                               </motion.button>
-                              <div className="flex flex-col items-center gap-1">
-                                <div className="w-12 h-12 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center">
-                                  <span className="text-lg">💳</span>
+                              <div className="flex flex-col items-center gap-1 min-w-[60px]">
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center">
+                                  <span className="text-base sm:text-lg">💳</span>
                                 </div>
-                                <span className="text-xs text-gray-600">Card</span>
+                                <span className="text-[10px] sm:text-xs text-gray-600">Card</span>
                               </div>
-                              <div className="flex flex-col items-center gap-1">
-                                <div className="w-12 h-12 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center">
-                                  <span className="text-lg">📤</span>
+                              <div className="flex flex-col items-center gap-1 min-w-[60px]">
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center">
+                                  <span className="text-base sm:text-lg">📤</span>
                                 </div>
-                                <span className="text-xs text-gray-600">Transfer</span>
+                                <span className="text-[10px] sm:text-xs text-gray-600">Transfer</span>
                               </div>
-                              <div className="flex flex-col items-center gap-1">
-                                <div className="w-12 h-12 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center">
-                                  <span className="text-lg">📊</span>
+                              <div className="flex flex-col items-center gap-1 min-w-[60px]">
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center">
+                                  <span className="text-base sm:text-lg">📊</span>
                                 </div>
-                                <span className="text-xs text-gray-600">Analytics</span>
+                                <span className="text-[10px] sm:text-xs text-gray-600">Analytics</span>
                               </div>
                             </div>
 
@@ -576,21 +576,21 @@ export default function HowItWorks() {
             {/* Code Input Panel - Right Side */}
             <div className="flex-1 w-full lg:w-auto">
               {currentView === "ziepx" && (
-              <motion.div
+                <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  className="bg-gray-50 rounded-2xl p-6 border-2 border-gray-200"
-              >
-                  <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                  className="bg-gray-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 border-gray-200"
+                >
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4 text-center">
                     Enter ZIEPX Code
-                </h3>
+                  </h3>
                   
                   {/* Code Display */}
-                  <div className="flex justify-center gap-2 mb-6">
+                  <div className="flex justify-center gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                     {[0, 1, 2, 3, 4, 5].map((idx) => (
                       <div
                         key={idx}
-                        className={`w-12 h-14 rounded-lg border-2 flex items-center justify-center text-2xl font-bold ${
+                        className={`w-10 h-12 sm:w-12 sm:h-14 rounded-lg border-2 flex items-center justify-center text-xl sm:text-2xl font-bold ${
                           enteredCode[idx]
                             ? "border-blue-600 bg-blue-50 text-blue-600"
                             : "border-gray-300 bg-white text-gray-400"
@@ -602,50 +602,50 @@ export default function HowItWorks() {
                   </div>
 
                   {/* Number Pad */}
-                  <div className="grid grid-cols-3 gap-3 mb-3">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-2 sm:mb-3">
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
-                <button
+                      <button
                         key={num}
                         onClick={() => handleCodeInput(num.toString())}
-                        className="py-4 bg-white border-2 border-gray-300 rounded-xl font-bold text-xl text-gray-800 hover:bg-gray-50 hover:border-blue-500 transition-colors"
+                        className="py-3 sm:py-4 bg-white border-2 border-gray-300 rounded-xl font-bold text-lg sm:text-xl text-gray-800 hover:bg-gray-50 hover:border-blue-500 transition-colors min-h-[44px] active:scale-95"
                       >
                         {num}
                       </button>
                     ))}
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-3">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-3">
                     <button
                       onClick={handleCodeDelete}
-                      className="py-4 bg-white border-2 border-gray-300 rounded-xl font-bold text-lg text-gray-800 hover:bg-gray-50 hover:border-red-500 transition-colors"
+                      className="py-3 sm:py-4 bg-white border-2 border-gray-300 rounded-xl font-bold text-base sm:text-lg text-gray-800 hover:bg-gray-50 hover:border-red-500 transition-colors min-h-[44px] active:scale-95"
                     >
                       ⌫
                     </button>
                     <button
                       onClick={() => handleCodeInput("0")}
-                      className="py-4 bg-white border-2 border-gray-300 rounded-xl font-bold text-xl text-gray-800 hover:bg-gray-50 hover:border-blue-500 transition-colors"
+                      className="py-3 sm:py-4 bg-white border-2 border-gray-300 rounded-xl font-bold text-lg sm:text-xl text-gray-800 hover:bg-gray-50 hover:border-blue-500 transition-colors min-h-[44px] active:scale-95"
                     >
                       0
-                </button>
-                <button
+                    </button>
+                    <button
                       onClick={handleConfirm}
                       disabled={enteredCode.length !== 6}
-                      className={`py-4 rounded-xl font-bold text-lg transition-colors ${
+                      className={`py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-colors min-h-[44px] active:scale-95 ${
                         enteredCode.length === 6
                           ? "bg-blue-600 text-white hover:bg-blue-700"
                           : "bg-gray-300 text-gray-500 cursor-not-allowed"
-                  }`}
-                >
+                      }`}
+                    >
                       Confirm
-                </button>
-              </div>
+                    </button>
+                  </div>
                 </motion.div>
               )}
 
               {currentView !== "ziepx" && (
-                <div className="bg-gray-50 rounded-2xl p-6 border-2 border-gray-200 text-center">
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">Instructions</h3>
-                  <div className="space-y-3 text-gray-700">
+                <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 border-gray-200 text-center">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">Instructions</h3>
+                  <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700">
                     {currentView === "checkout" && (
                       <>
                         <p>1. Review your purchase</p>

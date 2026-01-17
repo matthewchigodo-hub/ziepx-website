@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     description: "Secure mobile payment platform enabling financial inclusion across Zimbabwe and Africa.",
     type: "website",
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({

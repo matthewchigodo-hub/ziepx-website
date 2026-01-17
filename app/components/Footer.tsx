@@ -6,8 +6,8 @@ import Logo from "./Logo";
 export default function Footer() {
   return (
     <footer id="contact" className="bg-gray-900 text-white border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
@@ -91,11 +91,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
+        <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+          <p className="text-gray-400 text-xs sm:text-sm">
             © {new Date().getFullYear()} ZIEPX. All rights reserved.
           </p>
-          <p className="text-gray-400 text-sm mt-4 md:mt-0">
+          <p className="text-gray-400 text-xs sm:text-sm mt-3 sm:mt-4 md:mt-0">
             Built for Zimbabwe & Africa
           </p>
         </div>

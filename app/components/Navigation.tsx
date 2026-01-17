@@ -38,16 +38,16 @@ export default function Navigation() {
       scrolled ? "bg-primary-dark/95 backdrop-blur-md shadow-sm" : "bg-primary-dark"
     } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2 sm:space-x-3">
               <div className="relative">
-                <div className="w-10 h-10 relative">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 relative">
                   <Logo width={40} height={40} className="w-full h-full" priority />
                 </div>
               </div>
-              <span className="text-2xl font-bold text-white tracking-tight">ZIEPX</span>
+              <span className="text-xl sm:text-2xl font-bold text-white tracking-tight">ZIEPX</span>
             </div>
           </div>
 
@@ -79,7 +79,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white focus:outline-none"
+              className="text-gray-300 hover:text-white focus:outline-none p-2 -mr-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -98,21 +98,21 @@ export default function Navigation() {
           <div className="px-4 pt-2 pb-4 space-y-1 bg-primary-dark border-t border-gray-700">
             <a
               href="#features"
-              className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium"
+              className="text-gray-300 hover:text-white block px-3 py-3 text-base font-medium min-h-[44px] flex items-center"
               onClick={() => setIsOpen(false)}
             >
               Features
             </a>
             <a
               href="#how-it-works"
-              className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium"
+              className="text-gray-300 hover:text-white block px-3 py-3 text-base font-medium min-h-[44px] flex items-center"
               onClick={() => setIsOpen(false)}
             >
               How It Works
             </a>
             <a
               href="#security"
-              className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium"
+              className="text-gray-300 hover:text-white block px-3 py-3 text-base font-medium min-h-[44px] flex items-center"
               onClick={() => setIsOpen(false)}
             >
               Security

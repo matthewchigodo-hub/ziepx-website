@@ -39,28 +39,28 @@ const securityFeatures = [
 
 export default function Security() {
   return (
-    <section id="security" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="security" className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 lg:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-dark mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-dark mb-4 sm:mb-6">
             Your Security is
             <br />
             <span className="text-blue-600">
               Our Priority
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             Multiple layers of protection ensure your money and data stay safe
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {securityFeatures.map((feature, index) => {
             const Icon = feature.icon;
             return (
@@ -70,15 +70,15 @@ export default function Security() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-transparent hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-200 hover:border-transparent hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center mb-6">
-                  <Icon className="w-8 h-8 text-white" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-blue-600 flex items-center justify-center mb-4 sm:mb-6">
+                  <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-primary-dark mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-primary-dark mb-3 sm:mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
@@ -92,12 +92,12 @@ export default function Security() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="bg-blue-50 rounded-3xl p-12 border border-gray-200 text-center"
+          className="bg-blue-50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 border border-gray-200 text-center"
         >
-          <h3 className="text-3xl font-bold text-primary-dark mb-6">
+          <h3 className="text-2xl sm:text-3xl font-bold text-primary-dark mb-4 sm:mb-6">
             Regulated & Compliant
           </h3>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-4">
             ZIEPX operates in full compliance with local financial regulations and international
             security standards. Your transactions are monitored, protected, and fully traceable
             for your peace of mind.
