@@ -163,7 +163,7 @@ export default function HowItWorks() {
               </button>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 items-start">
+          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 items-start lg:items-center">
             {/* Phone Mockup - Left Side */}
             <div className="flex-shrink-0 w-full lg:w-1/2 flex justify-center">
               <motion.div
@@ -171,10 +171,10 @@ export default function HowItWorks() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
-                className="relative"
+                className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] mx-auto"
               >
                 {/* Phone Frame */}
-                <div className="w-48 h-[375px] sm:w-56 sm:h-[437px] md:w-64 md:h-[500px] bg-gray-800 rounded-[2rem] sm:rounded-[2.5rem] p-1.5 sm:p-2 shadow-2xl">
+                <div className="w-full aspect-[9/16] max-w-[280px] sm:max-w-[320px] md:max-w-[360px] mx-auto bg-gray-800 rounded-[2rem] sm:rounded-[2.5rem] p-1.5 sm:p-2 shadow-2xl">
                   <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden relative">
                     {/* Phone Notch */}
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-gray-800 rounded-b-2xl z-10"></div>
@@ -574,12 +574,12 @@ export default function HowItWorks() {
             </div>
 
             {/* Code Input Panel - Right Side */}
-            <div className="flex-1 w-full lg:w-auto">
+            <div className="flex-1 w-full lg:w-auto lg:max-w-md">
               {currentView === "ziepx" && (
                 <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  className="bg-gray-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 border-gray-200"
+                  className="bg-gray-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 border-gray-200 w-full"
                 >
                   <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4 text-center">
                     Enter ZIEPX Code

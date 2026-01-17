@@ -37,10 +37,10 @@ export default function Navigation() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled ? "bg-primary-dark/95 backdrop-blur-md shadow-sm" : "bg-primary-dark"
     } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pl-2 sm:pl-4 lg:pl-6 pr-4 sm:pr-6 lg:pr-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
+          <div className="flex-shrink-0 flex items-center -ml-1 sm:-ml-0">
             <div className="flex items-center space-x-2 sm:space-x-3">
               <div className="relative">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 relative">
@@ -52,8 +52,8 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-20 flex items-baseline space-x-8">
+          <div className="hidden md:flex md:items-center md:flex-1 md:justify-end">
+            <div className="flex items-baseline space-x-6 lg:space-x-8">
               <a
                 href="#features"
                 className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"

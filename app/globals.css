@@ -79,6 +79,41 @@ body {
       -webkit-text-size-adjust: 100%;
       text-size-adjust: 100%;
     }
+    
+    /* Better image rendering on mobile */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Tablet optimizations */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    /* Ensure proper spacing on tablets */
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  /* Desktop optimizations */
+  @media (min-width: 1025px) {
+    /* Better line height for readability on large screens */
+    body {
+      line-height: 1.7;
+    }
+    
+    /* Fixed background on desktop for parallax effect */
+    .hero-bg-mobile {
+      background-attachment: fixed;
+    }
+  }
+  
+  /* Mobile background optimization */
+  @media (max-width: 768px) {
+    .hero-bg-mobile {
+      background-attachment: scroll;
+    }
   }
 
   /* Improve performance on mobile */

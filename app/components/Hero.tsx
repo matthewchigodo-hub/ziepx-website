@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 hero-bg-mobile"
           style={{
             backgroundImage: "url('/images/zipex%20background.avif')",
             backgroundSize: "cover",
@@ -31,7 +31,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:pl-16">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mx-auto lg:mx-0">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
